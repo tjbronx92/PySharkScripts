@@ -5,8 +5,8 @@ import pyshark
 
 # Quickly capture 50 packets by default
 
-# Define which interface to capture from
-cap = pyshark.LiveCapture(interface="Wi-Fi")
+# Define which interface to capture from and output filname
+cap = pyshark.LiveCapture(interface="Wi-Fi", output_file="CLI_Capture00")
 
 # Sniff for traffic
 cap.sniff(packet_count=50)
